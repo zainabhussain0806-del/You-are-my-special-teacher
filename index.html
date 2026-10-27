@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17132e">
+  <title>For Sama Ma'am ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="sky" aria-hidden="true"></div>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main>
+    <!-- CHAPTER 1: WELCOME -->
+    <section class="page active" id="page1">
+      <div class="moon">☾</div>
+      <div class="eyebrow">✧ A little universe made just for you ✧</div>
+      <div class="flower-art">❀ ✿ ❀</div>
+      <p class="script">A very special day for</p>
+      <h1 class="hero-name">Sama Ma'am<span>♡</span></h1>
+      <div class="gold-line"></div>
+      <h2 class="birthday-title">Happy Birthday</h2>
+      <p class="intro">
+        For a teacher who makes a difference<br>
+        in ways words can hardly explain.
+      </p>
+      <p class="tiny">Tonight, a little magic has your name on it.</p>
+      <button class="main-btn" onclick="goTo(2)">
+        Enter Your Little Universe <span>✧</span>
+      </button>
+      <div class="bottom-note">MADE WITH LOVE & GRATITUDE ♡</div>
+    </section>
+
+    <!-- CHAPTER 2: APPRECIATION -->
+    <section class="page" id="page2">
+      <p class="eyebrow">CHAPTER ONE · THE LITTLE THINGS</p>
+      <h2 class="section-title">Dear Sama Ma'am,</h2>
+      <p class="description">
+        Some people leave a little light wherever they go.
+        Here are a few little reminders of the difference you make.
+      </p>
+
+      <div class="envelope-grid">
+        <button class="envelope" onclick="openNote(0)">
+          <span class="env-icon">💌</span>
+          <span>Your Kindness</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+        <button class="envelope" onclick="openNote(1)">
+          <span class="env-icon">🌷</span>
+          <span>Your Patience</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+        <button class="envelope" onclick="openNote(2)">
+          <span class="env-icon">⭐</span>
+          <span>Your Guidance</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+        <button class="envelope" onclick="openNote(3)">
+          <span class="env-icon">🦋</span>
+          <span>Your Encouragement</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+        <button class="envelope" onclick="openNote(4)">
+          <span class="env-icon">🌙</span>
+          <span>Your Presence</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+        <button class="envelope" onclick="openNote(5)">
+          <span class="env-icon">🎀</span>
+          <span>Your Special Place</span>
+          <small>Tap to unfold ✧</small>
+        </button>
+      </div>
+
+      <div class="note-box" id="noteBox" aria-live="polite">
+        <span class="note-sparkle">✧</span>
+        <p id="noteText">Choose an envelope to reveal a little note.</p>
+      </div>
+      <button class="main-btn" onclick="goTo(3)">There's More for You →</button>
+    </section>
+
+    <!-- CHAPTER 3: BIRTHDAY REVEAL -->
+    <section class="page" id="page3">
+      <p class="eyebrow">CHAPTER TWO · YOUR MOMENT</p>
+      <div class="cake">🎂</div>
+      <p class="script">A wish for the wonderful person that you are</p>
+      <h2 class="section-title birthday-glow">
+        Happy Birthday,<br>favourite teacher!🫶🏻
+      </h2>
+      <p class="description">
+        May this new chapter bring you the happiness
+        you so freely give to others, peaceful days,
+        beautiful surprises, and countless reasons to smile.
+      </p>
+
+      <div class="wish-card">
+        <span>✧ MY LITTLE WISH FOR YOU ✧</span>
+        <p>
+          May your dreams find their way to you.
+          May your efforts bloom into beautiful things.
+          And may life be as kind to you as you have been
+          to the people whose lives you touch.
+        </p>
+      </div>
+      <button class="main-btn" onclick="celebrate()">
+        Make a Little Magic ✨
+      </button>
+      <p class="tiny" id="celebrateText">A little surprise is waiting...</p>
+      <button class="text-btn" onclick="goTo(4)">Continue our journey →</button>
+    </section>
+
+    <!-- CHAPTER 4: KEEPSAKES -->
+    <section class="page" id="page4">
+      <p class="eyebrow">CHAPTER THREE · LITTLE KEEPSAKES</p>
+      <h2 class="section-title">A Few Things I Hope You Know ♡</h2>
+      <p class="description">
+        Not everything meaningful comes wrapped in a gift box.
+        Sometimes, it's a few words worth keeping.
+      </p>
+
+      <div class="memory-stack">
+        <div class="memory-card rotate-left">
+          <span class="memory-icon">📚</span>
+          <h3>More Than Lessons</h3>
+          <p>A good teacher gives knowledge. A truly memorable one leaves encouragement that lasts beyond the classroom.</p>
+        </div>
+        <div class="memory-card rotate-right">
+          <span class="memory-icon">🌸</span>
+          <h3>Room to Grow</h3>
+          <p>Thank you for being part of a journey where learning, trying again, and growing all matter.</p>
+        </div>
+        <div class="memory-card rotate-left">
+          <span class="memory-icon">✨</span>
+          <h3>A Little Appreciation</h3>
+          <p>I hope you know that the work you do matters, even on the days when nobody says it out loud and its true.</p>
+        </div>
+      </div>
+      <p class="tiny">Some people teach a subject.But You leave a little light behind. ♡</p>
+      <button class="main-btn" onclick="goTo(5)">Open Your Letter 💌</button>
+    </section>
+
+    <!-- CHAPTER 5: LETTER -->
+    <section class="page" id="page5">
+      <p class="eyebrow">CHAPTER FOUR · FROM MY HEART</p>
+      <div class="letter-paper">
+        <div class="letter-decoration">❀ ✧ ❀</div>
+        <h2 class="letter-heading">A Letter for You</h2>
+        <p class="letter-to">Dear Sama Ma'am,</p>
+
+        <div id="letterText" class="letter-text">
+          My dearest Special MA'AM!!
+
+You're not only the best but you are the bestesttt person I've ever came across Lucky!? Lucky enough to have uhh in my life ♥️🫶🏻
+
+I can't express how grateful I'm to have someone like u in my life. You are someone worth being cherished and praised All i want u to know is that u truly matter a lot to me and no matter wherever I go I'll always miss you 🫂♥️
+
+Wishing a very happiest birthday to my special favourite teacher in my life... May you blessed with everything you need you deserve may your wish to travel japan,italy, mussoorie,paris,london,andaman&nicobar etc etc come true, having you in my life is actul totally blessing.👀✈️
+         
+          doesn't matter how much my class annoy you but still we wait for ur geography and computer class only to see you and recess 2nd half time cuz you comes upstairs and me and my freind come downstairs to watch you 🫣🫵🏻
+
+Maybe it's your last birthday with us so giving you this beautiful small efforts from us to make you feel special happy and worthy🫶🏻...this memories may always remind you of us..swear to god don't want to lose you at any cost it must be my biggest failure after losing such a talented greatest teacher like you 🫡👩🏻‍🏫
+
+Ik ik maine parso rt hi apko website dedi thi but yk mere andr chul machi hui hai apke special day ke liye apke bdy k liye ki bas jaldi se apka bdy aaye apko surprise du apke reactions expression dekhne ke liye my excitement level is on peak<🥹🥳
+
+Feeling sad to that you'll leave our schl and one day you'll marry like MARRY!? I swear I never never imagined ur wedding ma'am sirf meri h bhyi koi aur le jayega damn !! (Iykyk) 😭❣️
+
+Well I hope I'll make duas for you that aap jis shaqs se nikkah karo wo apko bhaut khush rakhe apko support kare humesha apki stand le kabhi bhi ladai jhagda naa ho humesha khush rahe aap dono and he must be a #jorukagulambankerahunga umar sir ban jaye 😂
+
+May you achieve your goals be a women you want to be may you wear the uniform you wanted 🤌🏻
+
+your someone special is watching you no matter how far away he is.He always ask God for ur happiness and safety 
+You are pure beautiful soul I have even seen my in school life (whole life toh dekhi bhi nhi Maine abhi tk)🤭
+
+Once again happiessstttt birthday everrrr !!!
+Love you a lot ✨🤌🏻
+        </div>
+        <div class="letter-decoration">♡ ✧ ♡</div>
+      </div>
+      <button class="main-btn" onclick="goTo(6)">One Last Little Surprise →</button>
+    </section>
+
+    <!-- CHAPTER 6: FINAL SURPRISE -->
+    <section class="page" id="page6">
+      <div class="final-stars">✦ · ✧ · ✦</div>
+      <p class="eyebrow">THE LAST LITTLE CHAPTER</p>
+      <h2 class="final-title">Before You Go... ♡</h2>
+      <p class="description">
+        There's one last thing I want you to take with you.
+      </p>
+
+      <button class="star-box" id="starBox" onclick="revealFinal()">
+        <span class="big-star">✧</span>
+        <span>Tap the little star</span>
+        <small>Your final surprise is inside</small>
+      </button>
+
+      <div class="final-message" id="finalMessage" aria-live="polite">
+        <h3>A Little Reminder for You 🌙</h3>
+        <p>You matter.</p>
+        <p>Your efforts matter.</p>
+        <p>The kindness you give matters.</p>
+        <p>And I hope life gives you a thousand beautiful reasons to smile.
+        your hard work really matters.</p>
+        <div class="gold-line"></div>
+        <p class="script">May Allah always keep you blessed.</p>
+        <h3>Happy Birthday, Sama Ma'am ♡</h3>
+      </div>
+
+      <p class="final-signature">A little universe, made with gratitude.</p>
+      <button class="text-btn" onclick="goTo(1)">↺ Visit Your Universe Again</button>
+    </section>
+  </main>
+
+  <nav class="page-nav" aria-label="Website chapters">
+    <button onclick="goTo(1)" aria-label="Chapter 1">✧</button>
+    <button onclick="goTo(2)" aria-label="Chapter 2">♡</button>
+    <button onclick="goTo(3)" aria-label="Chapter 3">✦</button>
+    <button onclick="goTo(4)" aria-label="Chapter 4">❀</button>
+    <button onclick="goTo(5)" aria-label="Chapter 5">✉</button>
+    <button onclick="goTo(6)" aria-label="Chapter 6">☾</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
